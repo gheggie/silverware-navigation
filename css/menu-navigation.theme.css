@@ -1,0 +1,172 @@
+/* Menu Navigation Theme CSS Definitions:
+===================================================================================================================== */
+
+/* Menu Theme (Mobile):
+===================================================================================================================== */
+
+ul.sm-default a,
+ul.sm-default a:hover,
+ul.sm-default a:focus,
+ul.sm-default a:active {
+  outline: 0;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 10px 60px 10px 10px;
+}
+
+ul.sm-default a {
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s;
+}
+
+ul.sm-default a span.sub-arrow {
+  top: 50%;
+  left: auto;
+  right: 3px;
+  width: 34px;
+  height: 34px;
+  font-size: 0;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -17px;
+  text-align: center;
+  font-weight: normal;
+  line-height: 34px;
+  text-shadow: none;
+  transition: background 0.3s;
+}
+
+ul.sm-default a span.sub-arrow:before {
+  content: "\f067";  /* plus icon */
+  font-size: 14px;
+  font-family: 'FontAwesome';
+}
+
+ul.sm-default a.highlighted span.sub-arrow:before {
+  content: "\f068";  /* minus icon */
+  font-size: 14px;
+  font-family: 'FontAwesome';
+}
+
+ul.sm-default ul a,
+ul.sm-default ul a:hover,
+ul.sm-default ul a:focus,
+ul.sm-default ul a:active {
+  border-left: 1em solid transparent;
+}
+
+ul.sm-default ul ul a,
+ul.sm-default ul ul a:hover,
+ul.sm-default ul ul a:focus,
+ul.sm-default ul ul a:active {
+  border-left: 2em solid transparent;
+}
+
+ul.sm-default ul ul ul a,
+ul.sm-default ul ul ul a:hover,
+ul.sm-default ul ul ul a:focus,
+ul.sm-default ul ul ul a:active {
+  border-left: 3em solid transparent;
+}
+
+ul.sm-default ul ul ul ul a,
+ul.sm-default ul ul ul ul a:hover,
+ul.sm-default ul ul ul ul a:focus,
+ul.sm-default ul ul ul ul a:active {
+  border-left: 4em solid transparent;
+}
+
+ul.sm-default ul ul ul ul ul a,
+ul.sm-default ul ul ul ul ul a:hover,
+ul.sm-default ul ul ul ul ul a:focus,
+ul.sm-default ul ul ul ul ul a:active {
+  border-left: 5em solid transparent;
+}
+
+/* Media Queries:
+===================================================================================================================== */
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+  
+  /* Menu Theme (Desktop):
+  =================================================================================================================== */
+  
+  /* Right-Aligned Menu */
+  
+  ul.sm-right {
+    float: right;
+  }
+  
+  /* Sub Menu Style */
+  
+  ul.sm-default ul {
+    background: #fff;
+    border: 2px solid #888;
+  }
+  
+  ul.sm-default li {
+    border-top: 0;
+  }
+  
+  /* Sub Menu Shadow */
+  
+  ul.sm-shadow ul {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.30);
+  }
+  
+  /* Top-Level Menu Items */
+  
+  ul.sm-default a,
+  ul.sm-default a:hover,
+  ul.sm-default a:focus,
+  ul.sm-default a:active,
+  ul.sm-default a.highlighted {
+    padding: 10px;
+    border: 0 !important;
+  }
+  
+  ul.sm-default a:hover,
+  ul.sm-default a:focus,
+  ul.sm-default a:active,
+  ul.sm-default a.highlighted {
+    text-decoration: none;
+  }
+  
+  ul.sm-default a.disabled span {
+    opacity: 0.5;
+  }
+
+  /* Top-Level Sub Menu Arrows */
+  
+  ul.sm-default a.has-submenu {
+    padding-right: 20px;
+  }
+  
+  ul.sm-default a span.sub-arrow {
+    top: 50%;
+    right: 7px;
+    width: 0;
+    height: 0;
+    margin-top: -2px;
+    border-width: 4px;
+    border-style: solid dashed dashed dashed;
+    background: transparent !important;
+  }
+  
+  /* Sub-Level Sub Menu Arrows */
+  
+  ul.sm-default ul a.has-submenu {
+    padding-right: 20px;
+  }
+  
+  ul.sm-default ul a span.sub-arrow {
+    top: 50%;
+    right: 2px;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: dashed dashed dashed solid;
+  }
+  
+}

@@ -1,0 +1,75 @@
+/* Icon Navigation CSS Defintions:
+===================================================================================================================== */
+
+.iconnavigation ul.links {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: outside none none;
+}
+
+.iconnavigation ul.links > li {
+  display: inline-block;
+}
+
+.iconnavigation ul.links > li > a {
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s;
+}
+
+.iconnavigation ul.links > li > a.size-16 {
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  line-height: 16px;
+}
+
+.iconnavigation ul.links > li > a.size-24 {
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.iconnavigation ul.links > li > a.size-32 {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.iconnavigation ul.links > li > a.size-48 {
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.iconnavigation ul.links > li > a.size-64 {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  line-height: 64px;
+}
+
+.iconnavigation ul.links > li > a.size-96 {
+  width: 96px;
+  height: 96px;
+  font-size: 48px;
+  line-height: 96px;
+}
+
+.iconnavigation ul.links > li > a.size-128 {
+  width: 128px;
+  height: 128px;
+  font-size: 64px;
+  line-height: 128px;
+}
+
+.iconnavigation ul.links.rounded > li > a {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}

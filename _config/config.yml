@@ -1,0 +1,42 @@
+Page:
+  extensions:
+    - NavigationPageExtension
+
+LeftAndMain:
+  extra_requirements_css:
+    - silverware-navigation/css/cms/cms.css
+
+MenuNavigation:
+  button_types:
+    3dx: 3D X
+    3dx-r: 3D X Reverse
+    3dy: 3D Y
+    3dy-r: 3D Y Reverse
+    arrow: Arrow
+    arrow-r: Arrow Reverse
+    arrowalt: Arrow Alt
+    arrowalt-r: Arrow Alt Reverse
+    boring: Boring
+    collapse: Collapse
+    collapse-r: Collapse Reverse
+    elastic: Elastic
+    elastic-r: Elastic Reverse
+    emphatic: Emphatic
+    emphatic-r: Emphatic Reverse
+    slider: Slider
+    slider-r: Slider Reverse
+    spin: Spin
+    spin-r: Spin Reverse
+    spring: Spring
+    spring-r: Spring Reverse
+    stand: Stand
+    stand-r: Stand Reverse
+    squeeze: Squeeze
+    vortex: Vortex
+    vortex-r: Vortex Reverse
+  hide_effects:
+    hide: Hide
+    fadeOut: Fade Out
+  show_effects:
+    show: Show
+    fadeIn: Fade In

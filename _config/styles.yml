@@ -1,0 +1,75 @@
+CustomStyle:
+  types:
+    Menu:
+      rules:
+        Menu:
+          selector: 'ul'
+    MenuBar:
+      devices: grid-inactive
+      rules:
+        Bar:
+          selector: 'div.bar'
+    MenuButton:
+      devices: grid-inactive
+      rules:
+        Button:
+          selector: 'div.bar > button'
+        ButtonForeground:
+          editable: false
+          selector:
+            - 'div.bar > button > span.hamburger-inner'
+            - 'div.bar > button > span.hamburger-inner:before'
+            - 'div.bar > button > span.hamburger-inner:after'
+          mappings:
+            background-color: 'Button.StyleTextColorCSS'
+        Hover:
+          selector: 'div.bar > button:hover'
+        Active:
+          selector: 'div.bar > button.active'
+    MenuToggle:
+      devices: grid-inactive
+      rules:
+        Collapsed:
+          selector: 'a span.sub-arrow'
+        Expanded:
+          selector: 'a.highlighted span.sub-arrow'
+    MenuItem:
+      rules:
+        Item:
+          selector: 'ul > li'
+        Link:
+          selector: 'ul > li > a'
+        LinkArrow:
+          editable: false
+          selector: 'ul > li > a span.sub-arrow'
+          mappings:
+            $arrow: 'Link.StyleTextColorCSS'
+        Hover:
+          selector:
+            - 'ul > li > a:hover'
+            - 'ul > li > a:focus'
+            - 'ul > li > a:active'
+            - 'ul > li > a.highlighted'
+        HoverArrow:
+          editable: false
+          selector:
+            - 'ul > li > a:hover span.sub-arrow'
+            - 'ul > li > a:focus span.sub-arrow'
+            - 'ul > li > a:active span.sub-arrow'
+            - 'ul > li > a.highlighted span.sub-arrow'
+          mappings:
+            $arrow: 'Hover.StyleTextColorCSS'
+        Current:
+          selector: 'ul > li.current > a'
+        CurrentArrow:
+          editable: false
+          selector: 'ul > li.current > a span.sub-arrow'
+          mappings:
+            $arrow: 'Current.StyleTextColorCSS'
+        Section:
+          selector: 'ul > li.section > a'
+        SectionArrow:
+          editable: false
+          selector: 'ul > li.section > a span.sub-arrow'
+          mappings:
+            $arrow: 'Section.StyleTextColorCSS'

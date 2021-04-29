@@ -1,0 +1,99 @@
+/* Menu Navigation Base CSS Definitions:
+===================================================================================================================== */
+
+/* Base Styles:
+===================================================================================================================== */
+
+ul.sm-base {
+  margin: 0;
+  padding: 0;
+}
+
+ul.sm-base a {
+  color: inherit;
+}
+
+/* Z-Index Reset:
+===================================================================================================================== */
+
+.menunavigation .sm {
+  z-index: 999;
+}
+
+/* Menu Bar Styles:
+===================================================================================================================== */
+
+.menunavigation div.menu > .bar {
+  clear: both;
+  display: block;
+  min-height: 48px;
+}
+
+.menunavigation div.menu > .bar:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Menu Nav Styles:
+===================================================================================================================== */
+
+.menunavigation div.menu > .nav {
+  display: none;
+}
+
+/* Desktop Styles:
+===================================================================================================================== */
+
+@media (min-width: 750px) {
+  
+  /* Activate Desktop Menu:
+  =================================================================================================================== */
+  
+  ul.sm-base ul {
+    position: absolute;
+  }
+  
+  ul.sm-base li {
+    float: left;
+  }
+  
+  ul.sm-base.sm-rtl li {
+    float: right;
+  }
+  
+  ul.sm-base ul li,
+  ul.sm-base.sm-rtl ul li,
+  ul.sm-base.sm-vertical li {
+    float: none;
+  }
+  
+  ul.sm-base a {
+    white-space: nowrap;
+  }
+  
+  ul.sm-base ul a,
+  ul.sm-base.sm-vertical a {
+    white-space: normal;
+  }
+  
+  ul.sm-base .sm-nowrap > li > a,
+  ul.sm-base .sm-nowrap > li > :not(ul) a {
+    white-space: nowrap;
+  }
+  
+  /* Menu Bar Styles:
+  =================================================================================================================== */
+  
+  .menunavigation div.menu > .bar {
+    display: none;
+  }
+  
+  /* Menu Nav Styles:
+  =================================================================================================================== */
+  
+  .menunavigation div.menu > .nav {
+    display: block;
+  }
+  
+}

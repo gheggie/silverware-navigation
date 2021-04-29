@@ -1,0 +1,10 @@
+/* Level Navigation CSS Definitions:
+===================================================================================================================== */
+
+.levelnavigation ul.navigation > li > a {
+  color: inherit;
+}
+
+.levelnavigation ul.navigation > li.current > a {
+  font-weight: bold;
+}

@@ -1,0 +1,6 @@
+/* SilverWare Navigation Module CMS CSS Definitions:
+===================================================================================================================== */
+
+.IconNavigation #Form_EditForm_IconSize > li.odd {
+  clear: left;
+}

@@ -1,0 +1,12 @@
+/* Crumb Navigation CSS Definitions:
+===================================================================================================================== */
+
+.crumbnavigation div.crumbs {
+  color: #888;
+  margin: 0 0 1.5rem;
+  font-size: 1.3rem;
+}
+
+.crumbnavigation div.crumbs > a {
+  color: inherit;
+}
