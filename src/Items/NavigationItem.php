@@ -160,6 +160,8 @@ class NavigationItem extends BarItem
                 )->addExtraClass('navigation-item-options')
             ]
         );
+
+        $this->updateCMSFields($fields);
         
         // Answer Field Objects:
         
